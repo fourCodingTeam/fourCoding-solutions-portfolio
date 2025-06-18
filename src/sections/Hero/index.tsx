@@ -1,5 +1,4 @@
 "use client";
-import Button from "@/components/Button";
 import {
   HeroContainer,
   StyledHeroSubtitle,
@@ -9,7 +8,7 @@ import {
 
 export default function Hero() {
   return (
-    <HeroContainer>
+    <HeroContainer id="inicio">
       <TitleWrapper>
         <StyledHeroSubtitle>
           Construindo soluções de hoje, ao infinito e além

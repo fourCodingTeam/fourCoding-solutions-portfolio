@@ -15,4 +15,5 @@ body {
   background-color: #E9E9E9;
   font-family: var(--font-figtree);
   box-sizing: border-box;
+  overflow-x: hidden;
 }

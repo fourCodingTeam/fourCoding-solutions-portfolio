@@ -10,6 +10,7 @@ export const NavbarWrapper = styled.nav`
 `;
 
 export const StyledNavbarContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,5 +18,48 @@ export const StyledNavbarContainer = styled.div`
   background-color: ${theme.colors.background};
   border: 1px solid ${theme.colors.secondary};
   border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+`;
+
+export const ItemList = styled.ul`
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+`;
+export const MobileItemList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: ${theme.colors.background};
+  border: 1px solid ${theme.colors.secondary};
+  border-radius: 0.5rem;
   padding: 0.5rem;
+  box-shadow: 0 16px 32px ${theme.colors.fadedBlack};
+  list-style: none;
+`;
+
+export const StyledListItem = styled.li`
+  padding: 1rem 1rem;
+  border-radius: 0.45rem;
+  cursor: pointer;
+  color: ${theme.colors.secondary};
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: ${theme.colors.textMuted};
+  }
+`;
+export const StyledMobileListItem = styled.li`
+  padding: 1rem 1rem;
+  border-radius: 0.45rem;
+  cursor: pointer;
+  color: ${theme.colors.secondary};
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: ${theme.colors.fadedBlack};
+  }
 `;
