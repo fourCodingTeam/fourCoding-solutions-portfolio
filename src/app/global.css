@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-height: 100dvh;
+  min-width: 100dvw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #E9E9E9;
+  font-family: var(--font-figtree);
+  box-sizing: border-box;
+}
