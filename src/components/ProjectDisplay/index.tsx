@@ -49,7 +49,7 @@ export default function ProjectDisplay({
 
         <ImageWrapper>
           <Image
-            src="/images/call-to-action.png"
+            src={activeTab.img.src}
             alt={`${activeTab.title} Preview`}
             layout="responsive"
             width={800}

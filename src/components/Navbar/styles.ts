@@ -18,8 +18,9 @@ export const StyledNavbarContainer = styled.div`
   justify-content: space-between;
   background-color: ${theme.colors.background};
   border: 1px solid ${theme.colors.fadedBlack};
+  box-shadow: 0 0 24px ${theme.colors.fadedBlack};
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
 `;
 
 export const ItemList = styled.ul`
@@ -35,7 +36,8 @@ export const MobileItemList = styled.ul`
   background-color: ${theme.colors.background};
   border: 1px solid ${theme.colors.fadedBlack};
   border-radius: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.25rem;
+  gap: 0.25rem;
   box-shadow: 0 16px 32px ${theme.colors.fadedBlack};
   list-style: none;
 `;
@@ -46,7 +48,7 @@ export const StyledListItem = styled.li`
   cursor: pointer;
   color: ${theme.colors.secondary};
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 
   &:hover {
     color: ${theme.colors.textMuted};

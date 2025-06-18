@@ -10,18 +10,12 @@ export const HeroContainer = styled.div`
   align-items: flex-start;
   justify-content: flex-end;
   gap: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   background: radial-gradient(
     circle at top,
     ${theme.colors.primary},
-    ${theme.colors.background} 40%
+    ${theme.colors.background} 60%
   );
-  @media ${theme.media.tablet} {
-    min-height: 80dvh;
-  }
-  @media ${theme.media.mobile} {
-    min-height: 80dvh;
-  }
 `;
 
 export const StyledHeroTitle = styled.h1`
@@ -33,7 +27,7 @@ export const StyledHeroTitle = styled.h1`
     font-size: 72pt;
   }
   @media ${theme.media.mobile} {
-    font-size: 48pt;
+    font-size: 36pt;
   }
 `;
 

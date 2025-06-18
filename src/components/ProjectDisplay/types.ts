@@ -1,5 +1,8 @@
 export interface TabItemType {
   title: string;
+  img: {
+    src: string;
+  };
   description: string;
 }
 

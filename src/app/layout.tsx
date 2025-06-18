@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Figtree } from "next/font/google";
-import './global.css'
+import "./global.css";
 import Navbar from "@/components/Navbar";
 
 const dmSans = DM_Sans({
@@ -25,6 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <link
+        rel="icon"
+        href="/images/four-coding-logo.svg"
+        type="image/<generated>"
+        sizes="<generated>"
+      />
       <body className={`${dmSans.variable} ${figtree.variable}`}>
         <Navbar />
         {children}
