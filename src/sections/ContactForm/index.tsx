@@ -15,8 +15,10 @@ import { contactFormSchema, ContactFormType } from "./types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { theme } from "@/constants/theme";
 import { StyledSubtitle, StyledTitle, TitleWrapper } from "../styles";
+import { sendContactEmail } from "@/lib/actions/sendContactEmail";
 
 export default function ContactForm() {
+  const [isLoading, setIsLoading] = useState(false);
   const [selectedField, setSelectedField] = useState<
     keyof ContactFormType | null
   >(null);
@@ -38,7 +40,7 @@ export default function ContactForm() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const result = contactFormSchema.safeParse(formData);
@@ -55,6 +57,14 @@ export default function ContactForm() {
 
     setErrors({});
     console.log("Formulário válido! Enviar dados:", formData);
+    setIsLoading(true);
+    try {
+      await sendContactEmail(formData);
+    } catch (err) {
+      throw err;
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -131,7 +141,12 @@ export default function ContactForm() {
           )}
         </InputWrapper>
 
-        <Button color="secondary" text="Enviar Mensagem" type="submit" />
+        <Button
+          color="secondary"
+          text="Enviar Mensagem"
+          type="submit"
+          isLoading={isLoading}
+        />
       </FormWrapper>
     </ContactContainer>
   );

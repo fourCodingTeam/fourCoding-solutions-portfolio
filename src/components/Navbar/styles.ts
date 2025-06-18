@@ -18,7 +18,6 @@ export const StyledNavbarContainer = styled.div`
   justify-content: space-between;
   background-color: ${theme.colors.background};
   border: 1px solid ${theme.colors.fadedBlack};
-  box-shadow: 0 0 24px ${theme.colors.fadedBlack};
   border-radius: 0.5rem;
   padding: 0 1rem;
 `;
@@ -38,7 +37,6 @@ export const MobileItemList = styled.ul`
   border-radius: 0.5rem;
   padding: 0.25rem;
   gap: 0.25rem;
-  box-shadow: 0 16px 32px ${theme.colors.fadedBlack};
   list-style: none;
 `;
 

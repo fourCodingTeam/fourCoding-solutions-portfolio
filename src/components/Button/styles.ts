@@ -1,7 +1,8 @@
 "use client";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { ButtonProps } from "./types";
 import { theme } from "@/constants/theme";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export const StyledButton = styled.button<Pick<ButtonProps, "color">>`
   padding: 1rem 1.5rem;
@@ -38,7 +39,7 @@ export const StyledButton = styled.button<Pick<ButtonProps, "color">>`
     color === "hollow" &&
     css`
       background-color: transparent;
-      color: #0e0e0eAF;
+      color: #0e0e0eaf;
       border: 1px solid #0e0e0e25;
 
       &:hover {
@@ -51,4 +52,16 @@ export const StyledText = styled.p`
   font-family: var(--font-dm-sans);
   font-size: 12pt;
   font-weight: 400;
+`;
+
+const spin = keyframes`
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+`;
+export const StyledLoader = styled(Icon)`
+  animation: ${spin} 1s linear infinite;
 `;

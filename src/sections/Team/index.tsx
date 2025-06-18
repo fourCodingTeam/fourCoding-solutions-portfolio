@@ -18,7 +18,7 @@ const teamTabs: TabItemType[] = [
     title: "Thiago de P. Silva",
     description:
       "Atualmente trabalhando na GOW, Thiago é Full-Stack Developer e Data Analyst. Sua experiência envolve tanto o desenvolvimento back-end quanto análise de dados. Ao longo de sua trajetória acadêmica, foi 4 vezes pódio na Infoweek, com dois títulos de campeão, mostrando forte capacidade de resolução de problemas e liderança técnica.",
-    tags: ["Full-Stack", "Data Analyst"],
+    tags: ["Full-Stack"],
     linkedin: "https://www.linkedin.com/in/thiago1287/",
     instagram: "https://www.instagram.com/taigakilla/",
   },
