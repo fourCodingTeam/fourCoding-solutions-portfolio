@@ -13,7 +13,7 @@ export const Container = styled.section`
 `;
 
 export const TabList = styled.ul`
-  border: 1px solid #ccc;
+  border: 1px solid ${theme.colors.fadedBlack};
   border-radius: 8px;
   background-color: ${theme.colors.background};
   display: flex;
@@ -76,6 +76,7 @@ export const Description = styled.p`
 `;
 
 export const ImageWrapper = styled.div`
+  z-index: 0;
   width: 100%;
   position: relative;
 `;

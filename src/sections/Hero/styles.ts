@@ -3,7 +3,7 @@ import { theme } from "@/constants/theme";
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  width: 100dvw;
+  width: 100%;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -55,11 +55,4 @@ export const TitleWrapper = styled.div`
   flex-direction: column;
   align-items: left;
   text-align: left;
-`;
-
-export const ImageWrapper = styled.div`
-  position: relative;
-  width: 75%;
-  height: 100dvh;
-  aspect-ratio: 16/28;
 `;

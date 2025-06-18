@@ -2,11 +2,9 @@
 import React, { useState } from "react";
 import {
   ProjectsContainer,
-  StyledProjectsSubtitle,
-  StyledProjectsTitle,
-  TitleWrapper,
 } from "./styles";
 import ProjectDisplay from "@/components/ProjectDisplay";
+import { StyledSubtitle, StyledTitle, TitleWrapper } from "../styles";
 
 export default function Projetos() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -14,10 +12,10 @@ export default function Projetos() {
   return (
     <ProjectsContainer id="projetos">
       <TitleWrapper>
-        <StyledProjectsTitle>Nossos projetos</StyledProjectsTitle>
-        <StyledProjectsSubtitle>
+        <StyledTitle>Nossos projetos</StyledTitle>
+        <StyledSubtitle>
           Projetos que desenvolvemos desde 2023
-        </StyledProjectsSubtitle>
+        </StyledSubtitle>
       </TitleWrapper>
       <ProjectDisplay
         tabs={[

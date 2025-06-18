@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import { TeamsContainer } from "./styles";
+import { StyledSubtitle, StyledTitle, TitleWrapper } from "../styles";
 
-export default function index() {
+export default function Team() {
   return (
-    <div>index</div>
-  )
+    <TeamsContainer id="time">
+      <TitleWrapper>
+        <StyledTitle>Nosso time</StyledTitle>
+        <StyledSubtitle>Time de desenvolvimento responsável pela FourCoding</StyledSubtitle>
+      </TitleWrapper>
+    </TeamsContainer>
+  );
 }

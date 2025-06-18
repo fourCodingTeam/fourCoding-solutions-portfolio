@@ -43,7 +43,7 @@ export default function ProjectDisplay({
             <Description>{activeTab.description}</Description>
           </TextWrapper>
           <IconWrapper>
-            <Icon icon={"mdi-light:arrow-right"} fontSize={32} />
+            {/* <Icon icon={"mdi-light:arrow-right"} fontSize={32} /> */}
           </IconWrapper>
         </Header>
 

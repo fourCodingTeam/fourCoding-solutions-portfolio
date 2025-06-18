@@ -7,6 +7,7 @@ export const NavbarWrapper = styled.nav`
   width: 100%;
   background: transparent;
   padding: 1rem;
+  z-index: 999;
 `;
 
 export const StyledNavbarContainer = styled.div`
@@ -16,7 +17,7 @@ export const StyledNavbarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: ${theme.colors.background};
-  border: 1px solid ${theme.colors.secondary};
+  border: 1px solid ${theme.colors.fadedBlack};
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
 `;
@@ -32,7 +33,7 @@ export const MobileItemList = styled.ul`
   position: relative;
   width: 100%;
   background-color: ${theme.colors.background};
-  border: 1px solid ${theme.colors.secondary};
+  border: 1px solid ${theme.colors.fadedBlack};
   border-radius: 0.5rem;
   padding: 0.5rem;
   box-shadow: 0 16px 32px ${theme.colors.fadedBlack};
