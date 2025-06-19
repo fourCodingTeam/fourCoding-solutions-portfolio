@@ -34,7 +34,7 @@ const teamTabs: TabItemType[] = [
     title: "Maurício Hansen",
     description:
       "Product Owner (PO) e Front-End Developer na GOW, Maurício combina visão estratégica com habilidades de desenvolvimento. Durante sua trajetória, foi 3 vezes pódio na Infoweek, sendo campeão em uma das edições. Em 2024, conquistou o 1º lugar na Feira de Inovação e Tecnologia do Triângulo Mineiro, destacando-se pela capacidade de liderança e entrega de soluções inovadoras.",
-    tags: ["PO", "Front-End"],
+    tags: ["Project Owner", "Front-End"],
     linkedin: "https://www.linkedin.com/in/hansen-simoes/",
     instagram: "https://www.instagram.com/hansen_simoes/",
   },

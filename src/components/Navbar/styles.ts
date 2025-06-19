@@ -61,6 +61,6 @@ export const StyledMobileListItem = styled.li`
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: ${theme.colors.fadedBlack};
+    background-color: ${theme.colors.backgroundHover};
   }
 `;

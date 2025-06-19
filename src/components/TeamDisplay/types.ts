@@ -4,7 +4,7 @@ export interface TabItemType {
   tags: (
     | "Front-End"
     | "Back-End"
-    | "PO"
+    | "Project Owner"
     | "Full-Stack"
     | "Designer"
     | "Data Analyst"

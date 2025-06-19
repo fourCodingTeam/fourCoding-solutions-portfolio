@@ -9,9 +9,9 @@ export const theme = {
     fadedBlack: "#1F1F1F30",
     fadedBlackHover: "#1F1F1F50",
 
-    backgroundLight: "#F9F9F9",
-    background: "#E9E9E9",
-    backgroundHover: "#D5D5D5",
+    backgroundLight: "#FEFEFE",
+    background: "#F9F9F9",
+    backgroundHover: "#E5E5E5",
 
     textMuted: "#1E1E1E90",
     textMutedHover: "#1E1E1EB0",

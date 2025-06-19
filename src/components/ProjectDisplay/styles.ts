@@ -14,7 +14,7 @@ export const Container = styled.section`
 
 export const TabList = styled.ul`
   border: 1px solid ${theme.colors.fadedBlack};
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: ${theme.colors.background};
   display: flex;
   padding: 0.25rem;
@@ -28,7 +28,7 @@ export const TabList = styled.ul`
 export const TabItem = styled.li<TabItemProps>`
   width: 100%;
   padding: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   background: ${({ $active }: TabItemProps) =>
     $active ? theme.colors.primary : theme.colors.background};
   color: ${({ $active }) =>

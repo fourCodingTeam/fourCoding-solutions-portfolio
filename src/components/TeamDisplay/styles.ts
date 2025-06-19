@@ -12,7 +12,7 @@ interface TagProps {
 export const tagColors: Record<string, string> = {
   "Front-End": "#4CAF50",
   "Back-End": "#2196F3",
-  PO: "#FF9800",
+  "Project Owner": "#FF9800",
   "Full-Stack": "#9C27B0",
   Designer: "#E91E63",
   "Data Analyst": "#3F51B5",
@@ -22,7 +22,10 @@ export const Container = styled.section`
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 0.25rem;
+  background-color: ${theme.colors.secondary};
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  padding: 0.5rem;
   @media ${theme.media.tablet} {
     flex-direction: column;
   }
@@ -30,13 +33,12 @@ export const Container = styled.section`
 export const TabList = styled.ul`
   width: 100%;
   border: 1px solid ${theme.colors.fadedBlack};
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: ${theme.colors.secondary};
   display: flex;
   flex-direction: column;
-  padding: 0.25rem;
   list-style: none;
-  gap: 0.25rem;
+  gap: 0.5rem;
 `;
 
 export const TabItem = styled.li<TabItemProps>`
@@ -59,8 +61,11 @@ export const TabItem = styled.li<TabItemProps>`
 export const ContentWrapper = styled.div`
   max-width: 800px;
   border: 1px solid ${theme.colors.fadedBlack};
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: ${theme.colors.background};
+  @media ${theme.media.tablet} {
+    max-width: unset;
+  }
 `;
 
 export const Header = styled.div`
@@ -68,7 +73,7 @@ export const Header = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 1rem;
 `;
 export const TagsWrapper = styled.div`
