@@ -35,12 +35,13 @@ export const StyledButton = styled.button<Pick<ButtonProps, "color">>`
       }
     `}
 
-  ${({ color }) =>
-    color === "hollow" &&
+  ${({ color, disabled }) =>
+    (color === "hollow" || disabled === true) &&
     css`
       background-color: transparent;
       color: #0e0e0eaf;
       border: 1px solid #0e0e0e25;
+      cursor: no-drop;
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.05);

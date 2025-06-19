@@ -16,12 +16,15 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { theme } from "@/constants/theme";
 import { StyledSubtitle, StyledTitle, TitleWrapper } from "../styles";
 import { sendContactEmail } from "@/lib/actions/sendContactEmail";
+import { useEmailStore } from "@/stores";
 
 export default function ContactForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedField, setSelectedField] = useState<
     keyof ContactFormType | null
   >(null);
+
+  const { setHasSend, hasSend } = useEmailStore();
 
   const [formData, setFormData] = useState<ContactFormType>({
     nome: "",
@@ -60,12 +63,15 @@ export default function ContactForm() {
     setIsLoading(true);
     try {
       await sendContactEmail(formData);
+      setHasSend(true);
     } catch (err) {
+      setHasSend(false);
       throw err;
     } finally {
       setIsLoading(false);
     }
   };
+
 
   return (
     <ContactContainer id="contato">
@@ -145,6 +151,7 @@ export default function ContactForm() {
           color="secondary"
           text="Enviar Mensagem"
           type="submit"
+          disabled={hasSend ? hasSend : false}
           isLoading={isLoading}
         />
       </FormWrapper>

@@ -8,7 +8,6 @@ interface InputTypes {
 
 export const ContactContainer = styled.div`
   width: 100%;
-  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +45,7 @@ export const InputWrapper = styled.div`
 `;
 
 export const StyledInput = styled.input<InputTypes>`
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   background-color: ${theme.colors.backgroundLight};
   border: 1px solid
@@ -60,7 +59,7 @@ export const StyledInput = styled.input<InputTypes>`
 `;
 
 export const StyledTextArea = styled.textarea<InputTypes>`
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   background-color: ${theme.colors.backgroundLight};
   border: 1px solid
